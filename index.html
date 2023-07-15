@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    html,body{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body{
+      width: 100%;
+      height: 100vh;
+      background-color: hsl(30, 38%, 92%);
+      position: relative;
+      font-family: 'Montserrat';
+    }
+
+    #product-wrapper{
+      position: absolute;
+      display: flex;
+      flex-flow:row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      top: 50px;
+      left: 25%;
+      max-width: 50%;
+    }
+
+    #product-wrapper div{
+      width: 50%;
+
+    }
+
+    #product-info{
+      background-color: white;
+    }
+
+    #title{
+      font-family: 'Fraunceus';
+    }
+
+    #product-image{
+      margin:auto;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    em{
+      font-style: no;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <div id="background">
+
+  </div> -->
+
+  <div id="product-wrapper">
+
+    <div id="img-wrapper">
+      <img id="product-image" src="images/image-product-desktop.jpg" alt="Product Image">
+    </div>
+    <div id="product-info">
+
+      <em>Perfume</em>
+      <br>
+      <span id="title">
+        Gabrielle Essence Eau De Parfum
+      </span>
+      <p id="description">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+
+        $149.99
+        $169.99
+      
+        Add to Cart
+      </p>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Arthur Barboza</a>.
+  </div>
+</body>
+</html>

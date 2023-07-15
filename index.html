@@ -42,27 +42,71 @@
       max-width: 50%;
     }
 
-    #product-wrapper div{
+    #product-wrapper > div{
       width: 50%;
-
     }
 
     #product-info{
       background-color: white;
+      padding: 20px 35px;
     }
 
     #title{
       font-family: 'Fraunceus';
+      font-weight: 700;
+      font-size: 28px;
+    }
+
+    #img-wrapper{
+      height: 100%;
+      display: inline-block;
     }
 
     #product-image{
       margin:auto;
-      width: 100%;
       border-radius: 5px;
+      display: inline-block;
+      max-height: 100%;
+      max-width: 100%;
+      height: 100%;
     }
 
     em{
-      font-style: no;
+      font-style: normal;
+      padding: 20px 0;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+
+    #product-info #buy{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 75%;
+    }
+
+    .price{
+      display: inline-block;
+    }
+
+    #add-to-cart{
+      background-color: hsl(158, 36%, 37%);
+      color: white;
+      border: none;
+      padding: 5px 15px;
+      width: 100%;
+    }
+
+    #new-price{
+      color: hsl(158, 36%, 37%);
+      font-size: 28px;
+    }
+
+    #old-price{
+      text-decoration:line-through;
+      font-size: 12px;
     }
 
   </style>
@@ -82,17 +126,19 @@
       <em>Perfume</em>
       <br>
       <span id="title">
-        Gabrielle Essence Eau De Parfum
+        Gabrielle <br> Essence Eau <br> De Parfum
       </span>
       <p id="description">
         A floral, solar and voluptuous interpretation composed by Olivier Polge, 
         Perfumer-Creator for the House of CHANEL.
-
-        $149.99
-        $169.99
-      
-        Add to Cart
       </p>
+      <div id="buy">
+        <p class="price" id="new-price">$149.99</p>
+        <p class="price" id="old-price">$169.99</p>
+        <button id="add-to-cart">
+          Add to Cart
+        </button>
+      </div>
     </div>
   </div>
 

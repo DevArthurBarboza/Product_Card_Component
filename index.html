@@ -9,107 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    
-    html,body{
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    body{
-      width: 100%;
-      height: 100vh;
-      background-color: hsl(30, 38%, 92%);
-      position: relative;
-      font-family: 'Montserrat';
-    }
-
-    #product-wrapper{
-      position: absolute;
-      display: flex;
-      flex-flow:row;
-      justify-content: space-evenly;
-      align-items: flex-start;
-      top: 50px;
-      left: 25%;
-      max-width: 50%;
-    }
-
-    #product-wrapper > div{
-      width: 50%;
-    }
-
-    #product-info{
-      background-color: white;
-      padding: 20px 35px;
-    }
-
-    #title{
-      font-family: 'Fraunceus';
-      font-weight: 700;
-      font-size: 28px;
-    }
-
-    #img-wrapper{
-      height: 100%;
-      display: inline-block;
-    }
-
-    #product-image{
-      margin:auto;
-      border-radius: 5px;
-      display: inline-block;
-      max-height: 100%;
-      max-width: 100%;
-      height: 100%;
-    }
-
-    em{
-      font-style: normal;
-      padding: 20px 0;
-      display: inline-block;
-      text-transform: uppercase;
-      letter-spacing: 8px;
-    }
-
-    #product-info #buy{
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: center;
-      width: 75%;
-    }
-
-    .price{
-      display: inline-block;
-    }
-
-    #add-to-cart{
-      background-color: hsl(158, 36%, 37%);
-      color: white;
-      border: none;
-      padding: 5px 15px;
-      width: 100%;
-    }
-
-    #new-price{
-      color: hsl(158, 36%, 37%);
-      font-size: 28px;
-    }
-
-    #old-price{
-      text-decoration:line-through;
-      font-size: 12px;
-    }
-
-  </style>
 </head>
 <body>
   <!-- <div id="background">
@@ -122,9 +24,10 @@
       <img id="product-image" src="images/image-product-desktop.jpg" alt="Product Image">
     </div>
     <div id="product-info">
+      <div id="info-wrapper">
 
-      <em>Perfume</em>
-      <br>
+        <em>Perfume</em>
+        <br>
       <span id="title">
         Gabrielle <br> Essence Eau <br> De Parfum
       </span>
@@ -139,6 +42,7 @@
           Add to Cart
         </button>
       </div>
+    </div>
     </div>
   </div>
 
